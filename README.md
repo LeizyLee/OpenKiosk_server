@@ -85,5 +85,14 @@ jsp는 HTML과 자바 코드를 같이 사용할 수 있게 해주는 스크립�
 ![01](./readmeImg/getpostTest.JPG)
 ![02](./readmeImg/getpostTest_02.JPG)
 + 여기에서 더 확장해보겠음
-  - 인증이 실패하면 form.jsp를
+  - 인증이 실패하면 form.jsp를(form_02로 작성)
   - 성공하면 welcome.jsp를 수행
+
+![01](./readmeImg/Login_example_01.JPG)
+form_02.jsp
+
+![02](./readmeImg/Login_example_02.JPG)
+welcome.jsp
+
+![03](./readmeImg/Login_example_03.JPG)
+fail form_02.jsp
