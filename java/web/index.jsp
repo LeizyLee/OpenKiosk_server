@@ -12,6 +12,8 @@
   </head>
   <body>
     Hello World!
-    <p><%= new Date() %></p>
+    <p><%= new Date() %></p><br>
+    <jsp:useBean id="example" class="example.HelloWorld" scope="page"/>
+    <% example.sayHelloWorldFrom("Lazy"); %>
   </body>
 </html>

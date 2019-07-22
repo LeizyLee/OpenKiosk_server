@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3d72e2c-1686-4920-bc6c-9b6e0214788b" name="Default Changelist" comment="" />
+    <list default="true" id="d3d72e2c-1686-4920-bc6c-9b6e0214788b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/out/artifacts/okserver_war/okserver.war" beforeDir="false" afterPath="$PROJECT_DIR$/java/out/artifacts/okserver_war/okserver.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/out/artifacts/okserver_war_exploded/WEB-INF/classes/example/HelloWorld.class" beforeDir="false" afterPath="$PROJECT_DIR$/java/out/artifacts/okserver_war_exploded/WEB-INF/classes/example/HelloWorld.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/out/artifacts/okserver_war_exploded/authentication.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/java/out/artifacts/okserver_war_exploded/authentication.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/out/artifacts/okserver_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/java/out/artifacts/okserver_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/out/production/okserver/example/HelloWorld.class" beforeDir="false" afterPath="$PROJECT_DIR$/java/out/production/okserver/example/HelloWorld.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/src/example/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/src/example/HelloWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/web/authentication.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/java/web/authentication.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/java/web/index.jsp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +31,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="209">
-                <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+                <caret line="11" selection-start-line="11" selection-end-line="11" />
               </first_editor>
               <second_editor />
             </state>
@@ -55,6 +66,7 @@
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -76,11 +88,6 @@
               <item name="OpenKiosk_server" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
-            <path>
-              <item name="OpenKiosk_server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 (get_review) &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -90,7 +97,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OpenKiosk" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/Codeup" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -205,16 +212,18 @@
       <workItem from="1560993693973" duration="3416000" />
       <workItem from="1560997598288" duration="1642000" />
       <workItem from="1560999261305" duration="3502000" />
+      <workItem from="1562550936261" duration="640000" />
+      <workItem from="1562813895656" duration="617000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29950000" />
+    <option name="totallyTimeSpent" value="31207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13129103" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1356674" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -233,7 +242,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.06345733" />
+      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.06345733" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -248,41 +257,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/draw_graph.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serverUI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qtDesinger/servergui.ui">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sync.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/draw_graph.py" />
+    <entry file="file://$PROJECT_DIR$/serverUI.py" />
+    <entry file="file://$PROJECT_DIR$/qtDesinger/servergui.ui" />
+    <entry file="file://$PROJECT_DIR$/Sync.py" />
+    <entry file="file://$PROJECT_DIR$/GUI.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="209">
-            <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <caret line="11" selection-start-line="11" selection-end-line="11" />
           </first_editor>
           <second_editor />
         </state>
