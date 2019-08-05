@@ -6,7 +6,7 @@ from PyQt5 import uic
 import threading
 import python.Sync as Sync
 
-form_class = uic.loadUiType("./qtDesinger/servergui.ui")[0]
+form_class = uic.loadUiType("./qtDesigner/servergui.ui")[0]
 
 
 class MyWindow(QMainWindow, form_class, threading.Thread):
