@@ -13,6 +13,7 @@
 + exApi
     - 외부 API를 활용한 모듈 디렉토리  
     - Amazon Comperhend, Amazon Translate, BeautifulSoup4 사용
+    - reviewCrawling.py : 프로젝트에 사용될 리뷰 데이터를 웹에서 크롤링하는 스크립트입니다.
 + qtDesinger
     - Pyqt5를 이용한 gui 테스트 및 파일 저장 디렉토리
 
@@ -24,7 +25,7 @@
 + GUI.py
     - 프로젝트의 MAIN이 되는 소스 파일
     - GUI 버튼의 이벤트 처리 구현
-    - 위의 객체 및 직접 정의한 모듈을 이용하여 다양한 기능을 수행함.
+    - 위의 객체 및 직접 정의한 모듈을 이용하여 다양한 기능을 수행합니다.
     
 ### 프로젝트 GUI(음식점의 예)
 + Page 1 : 매출
