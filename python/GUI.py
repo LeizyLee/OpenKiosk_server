@@ -18,7 +18,6 @@ class MyWindow(QMainWindow, form_class, threading.Thread):
         self.setupUi(self)
 
         self.DBdata = Sync.SyncCursor()
-
         self.referenceImg = QPixmap()
 
         # Tab1 메뉴
@@ -26,14 +25,13 @@ class MyWindow(QMainWindow, form_class, threading.Thread):
         self.make_table_tab1(self.DBdata.menu_list)
         self.menuTable.clicked.connect(self.menuClicked)
 
-
         # Tab2 분석
         self.AllBtn.clicked.connect(lambda : self.showReivewGraph(4))
         self.PosBtn.clicked.connect(lambda : self.showReivewGraph(0))
         self.NegBtn.clicked.connect(lambda : self.showReivewGraph(1))
         self.NorBtn.clicked.connect(lambda : self.showReivewGraph(2))
         self.ComBtn.clicked.connect(lambda : self.showReivewGraph(3))
-        #self.reviewData = Sync.SyncCursor()
+        # self.reviewData = Sync.SyncCursor()
         self.ReviewTable.clear()
         self.ReviewTable.clicked.connect(self.cellClicked)
         self.reviewLabel.setWordWrap(True)
