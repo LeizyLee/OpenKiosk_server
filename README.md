@@ -9,6 +9,9 @@
   - Beautiful soup4: 웹 크롤링
   - pyMySQL: MySQL DataBase 연동
   
+### 프로젝트 소개
+- 리뷰(쇼핑이나 음식점) 데이터를 Amazon 머신러닝 AI를 활용하여 글의 성향이 어떻게 되는지 분석해주는 프로그램입니다.
+  
 ### 프로젝트 파일
 + exApi
     - 외부 API를 활용한 모듈 디렉토리  
