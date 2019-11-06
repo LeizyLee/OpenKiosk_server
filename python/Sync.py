@@ -1,5 +1,5 @@
 class SyncCursor:
-    def __init__(self, _host='192.168.25.4', _user='master', _password='qwe123!!@@', _db='menu', _charset='utf8'):
+    def __init__(self, _host='121.154.1.89', _user='Lazy', _password='qwe123!!@@', _db='menu', _charset='utf8'):
         try:
             import pymysql
 
@@ -25,10 +25,10 @@ class SyncCursor:
         self.cur.execute(sql)
         self.menu_list = list(self.cur.fetchall())
 
-        sql = "SELECT s.salesId, s.date, m.idmenulist, m.name, m.price " \
+        sql = "SELECT s.salesId, s.date, m.menuId, m.name, m.price " \
               "FROM salesstatics as s " \
               "INNER JOIN menulist as m " \
-              "ON s.id_num = m.idmenulist;"
+              "ON s.menuId = m.menuId;"
         self.cur.execute(sql)
         self.sales_list = list(self.cur.fetchall())
 
@@ -37,6 +37,18 @@ class SyncCursor:
 
     def get_table(self):
         return self.table_list
+
+    def reviewUpdate(self):
+        from .exApi import Amazon
+
+        sql = "UPDATE review SET propensity=%s, percent=%s WHERE rvId=%s"
+        self.cur.execute('SELECT rvId, rvText FROM review')
+        rvTemp = self.cur.fetchall()
+        analyzer = Amazon.AWS()
+        for i in rvTemp:
+            prop, percent = analyzer.Comprehend(msg=i[1])
+            self.cur.execute(sql, (prop, percent, i[0]))
+        self.conn.commit()
 
     def sepTable(self):
         for i in self.table_list:
@@ -107,14 +119,7 @@ class SyncCursor:
 
 if __name__ == "__main__":
     Sync = SyncCursor()
-    print("sales_list")
-    print(Sync.sales_list[0])
-    print("menu_list")
-    print(Sync.menu_list[0])
-    print("table_list")
-    print(Sync.table_list[0])
-    temp = [i for i in Sync.sales_list if i[2] == 1001]
-    print(temp)
+    Sync.reviewUpdate()
     #Sync.showSepGraph(2)
     #Sync.showAllGraph()
     #table_list = Sync.get_table()
