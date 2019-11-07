@@ -52,17 +52,17 @@ class SyncCursor:
 
     def sepTable(self):
         for i in self.table_list:
-            if i[-2] == '복합':
+            if i[-2] == 'MIXED':
                 self.Complexive.append(i)
-            elif i[-2] == '중립':
+            elif i[-2] == 'NEUTRAL':
                 self.Normal.append(i)
-            elif i[-2] == '긍정':
+            elif i[-2] == 'POSITIVE':
                 self.Positive.append(i)
-            elif i[-2] == '부정':
+            elif i[-2] == 'NEGATIVE':
                 self.Negative.append(i)
 
     def showSepGraph(self, option=0):
-        graph_title = ["Positive", "Negative", "Normal", "Complexive"]
+        graph_title = ["Positive", "Negative", "Neutral", "Complexive"]
         tempdir = []
         if option == 0:
             tempdir = self.Positive.copy()
@@ -75,7 +75,7 @@ class SyncCursor:
 
         temp = self.plt
         tx = len(tempdir)
-        ty = [int(x[-1][:-1]) for x in tempdir]
+        ty = [float(x[-1][:-1]) for x in tempdir]
         temp.plot(ty)
         temp.grid(b=True, which='both', axis='both')
         #temp.tight_layout()
@@ -103,7 +103,7 @@ class SyncCursor:
         for i in temp_list:
             temp.subplot(plt_num)
             tx = len(i)
-            ty = [int(x[-1][:-1]) for x in i]
+            ty = [float(x[-1][:-1]) for x in i]
             temp.plot(ty)
             temp.grid(b=True, which='both', axis='both')
             temp.tight_layout(pad=0.4, w_pad=0.5, h_pad=1.0)
@@ -119,7 +119,7 @@ class SyncCursor:
 
 if __name__ == "__main__":
     Sync = SyncCursor()
-    Sync.reviewUpdate()
+    print(Sync.menu_list[1])
     #Sync.showSepGraph(2)
     #Sync.showAllGraph()
     #table_list = Sync.get_table()

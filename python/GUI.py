@@ -75,11 +75,11 @@ class MyWindow(QMainWindow, form_class, threading.Thread):
                 continue
             self.menuTable.setItem(t, 0, QTableWidgetItem(str(_list[n][0])))
 
-            if str(_list[n][1]) == 'korea':
+            if str(_list[n][1]) == '한국':
                 self.menuTable.setItem(t, 1, QTableWidgetItem('한국'))
-            elif str(_list[n][1]) == 'china':
+            elif str(_list[n][1]) == '중국':
                 self.menuTable.setItem(t, 1, QTableWidgetItem('중국'))
-            elif str(_list[n][1]) == 'japan':
+            elif str(_list[n][1]) == '일본':
                 self.menuTable.setItem(t, 1, QTableWidgetItem('일본'))
 
             self.menuTable.setItem(t, 2, QTableWidgetItem(str(_list[n][2])))
@@ -101,10 +101,10 @@ class MyWindow(QMainWindow, form_class, threading.Thread):
             sumN = 0
             Percent = str(0) + '%'
         else:
-            sumN = len(temp) * temp[0][-1]
+            sumN = len(temp) * int(temp[0][-1])
             sumAll = 0
             for i in self.DBdata.sales_list:
-                sumAll += i[-1]
+                sumAll += float(i[-1])
             Percent =format(sumN / sumAll * 100, '.2f') + '%'
 
         self.menuInfoTable.setItem(0,0, QTableWidgetItem(str(totalNum) + "개"))
@@ -168,11 +168,11 @@ class MyWindow(QMainWindow, form_class, threading.Thread):
         self.make_table_tab2(_list)
 
         for i in _list:
-            if int(i[-1][:-1]) > maxN:
-                maxN = int(i[-1][:-1])
-            elif int(i[-1][:-1]) < minN:
-                minN = int(i[-1][:-1])
-            aveN = aveN + int(i[-1][:-1])
+            if float(i[-1][:-1]) > maxN:
+                maxN = float(i[-1][:-1])
+            elif float(i[-1][:-1]) < minN:
+                minN = float(i[-1][:-1])
+            aveN = aveN + float(i[-1][:-1])
 
         if len(_list) == len(self.DBdata.table_list):
             aveN = len(self.DBdata.Positive) / len(self.DBdata.table_list) * 100
@@ -181,8 +181,8 @@ class MyWindow(QMainWindow, form_class, threading.Thread):
         else:
             aveN = aveN / len(_list)
             self.aveLabel.setText("Avarage : " + format(aveN, '.1f') + "%")
-        self.bestLabel.setText("Max Percent : " + str(maxN) + "%")
-        self.worstLabel.setText("Min Percent : " + str(minN) + "%")
+        self.bestLabel.setText("Max Percent : " + format(maxN,'.1f') + "%")
+        self.worstLabel.setText("Min Percent : " + format(minN,'.1f') + "%")
 
 
 
